@@ -44,6 +44,32 @@
 		F45AB5AD23BD480800B09E04 /* PenTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5AC23BD480800B09E04 /* PenTypes.swift */; };
 		F45AB5AE23BD480800B09E04 /* PenTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5AC23BD480800B09E04 /* PenTypes.swift */; };
 		F45AB5B123BD491300B09E04 /* LineSegTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5AF23BD491300B09E04 /* LineSegTests.swift */; };
+		F45AB5B323BD4E0200B09E04 /* TriangleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5B223BD4E0200B09E04 /* TriangleError.swift */; };
+		F45AB5B423BD4E0200B09E04 /* TriangleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5B223BD4E0200B09E04 /* TriangleError.swift */; };
+		F45AB5B623BD4E1300B09E04 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5B523BD4E1300B09E04 /* Mesh.swift */; };
+		F45AB5B723BD4E1300B09E04 /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5B523BD4E1300B09E04 /* Mesh.swift */; };
+		F45AB5B923BD4E3E00B09E04 /* EdgeOverflowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5B823BD4E3E00B09E04 /* EdgeOverflowError.swift */; };
+		F45AB5BA23BD4E3E00B09E04 /* EdgeOverflowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5B823BD4E3E00B09E04 /* EdgeOverflowError.swift */; };
+		F45AB5BC23BD4FDC00B09E04 /* CoincidentLinesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5BB23BD4FDC00B09E04 /* CoincidentLinesError.swift */; };
+		F45AB5BD23BD4FDC00B09E04 /* CoincidentLinesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5BB23BD4FDC00B09E04 /* CoincidentLinesError.swift */; };
+		F45AB5BF23BD4FEA00B09E04 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5BE23BD4FEA00B09E04 /* Line.swift */; };
+		F45AB5C023BD4FEA00B09E04 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5BE23BD4FEA00B09E04 /* Line.swift */; };
+		F45AB5C223BD4FF600B09E04 /* NonCoPlanarLinesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5C123BD4FF600B09E04 /* NonCoPlanarLinesError.swift */; };
+		F45AB5C323BD4FF600B09E04 /* NonCoPlanarLinesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5C123BD4FF600B09E04 /* NonCoPlanarLinesError.swift */; };
+		F45AB5C523BD500100B09E04 /* ParallelLinesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5C423BD500100B09E04 /* ParallelLinesError.swift */; };
+		F45AB5C623BD500100B09E04 /* ParallelLinesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5C423BD500100B09E04 /* ParallelLinesError.swift */; };
+		F45AB5C823BD50A900B09E04 /* ArcPointsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5C723BD50A900B09E04 /* ArcPointsError.swift */; };
+		F45AB5C923BD50A900B09E04 /* ArcPointsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5C723BD50A900B09E04 /* ArcPointsError.swift */; };
+		F45AB5CB23BD50B600B09E04 /* ParallelPlanesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5CA23BD50B600B09E04 /* ParallelPlanesError.swift */; };
+		F45AB5CC23BD50B600B09E04 /* ParallelPlanesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5CA23BD50B600B09E04 /* ParallelPlanesError.swift */; };
+		F45AB5CE23BD50C100B09E04 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5CD23BD50C100B09E04 /* Plane.swift */; };
+		F45AB5CF23BD50C100B09E04 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5CD23BD50C100B09E04 /* Plane.swift */; };
+		F45AB5D123BD5DAA00B09E04 /* CoincidentPlanesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5D023BD5DAA00B09E04 /* CoincidentPlanesError.swift */; };
+		F45AB5D223BD5DAA00B09E04 /* CoincidentPlanesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5D023BD5DAA00B09E04 /* CoincidentPlanesError.swift */; };
+		F45AB5D423BD5DB600B09E04 /* ParallelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5D323BD5DB600B09E04 /* ParallelError.swift */; };
+		F45AB5D523BD5DB600B09E04 /* ParallelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5D323BD5DB600B09E04 /* ParallelError.swift */; };
+		F45AB5D723BD607C00B09E04 /* LadderCountError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5D623BD607C00B09E04 /* LadderCountError.swift */; };
+		F45AB5D823BD607C00B09E04 /* LadderCountError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5D623BD607C00B09E04 /* LadderCountError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +112,19 @@
 		F45AB5A923BD47FC00B09E04 /* LineSeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSeg.swift; sourceTree = "<group>"; };
 		F45AB5AC23BD480800B09E04 /* PenTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PenTypes.swift; sourceTree = "<group>"; };
 		F45AB5AF23BD491300B09E04 /* LineSegTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSegTests.swift; sourceTree = "<group>"; };
+		F45AB5B223BD4E0200B09E04 /* TriangleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleError.swift; sourceTree = "<group>"; };
+		F45AB5B523BD4E1300B09E04 /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		F45AB5B823BD4E3E00B09E04 /* EdgeOverflowError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeOverflowError.swift; sourceTree = "<group>"; };
+		F45AB5BB23BD4FDC00B09E04 /* CoincidentLinesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoincidentLinesError.swift; sourceTree = "<group>"; };
+		F45AB5BE23BD4FEA00B09E04 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		F45AB5C123BD4FF600B09E04 /* NonCoPlanarLinesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonCoPlanarLinesError.swift; sourceTree = "<group>"; };
+		F45AB5C423BD500100B09E04 /* ParallelLinesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallelLinesError.swift; sourceTree = "<group>"; };
+		F45AB5C723BD50A900B09E04 /* ArcPointsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcPointsError.swift; sourceTree = "<group>"; };
+		F45AB5CA23BD50B600B09E04 /* ParallelPlanesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallelPlanesError.swift; sourceTree = "<group>"; };
+		F45AB5CD23BD50C100B09E04 /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		F45AB5D023BD5DAA00B09E04 /* CoincidentPlanesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoincidentPlanesError.swift; sourceTree = "<group>"; };
+		F45AB5D323BD5DB600B09E04 /* ParallelError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallelError.swift; sourceTree = "<group>"; };
+		F45AB5D623BD607C00B09E04 /* LadderCountError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LadderCountError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +166,18 @@
 		F45AB55D23BD3B5600B09E04 /* MeshTools */ = {
 			isa = PBXGroup;
 			children = (
+				F45AB5D323BD5DB600B09E04 /* ParallelError.swift */,
+				F45AB5D023BD5DAA00B09E04 /* CoincidentPlanesError.swift */,
+				F45AB5CD23BD50C100B09E04 /* Plane.swift */,
+				F45AB5CA23BD50B600B09E04 /* ParallelPlanesError.swift */,
+				F45AB5C723BD50A900B09E04 /* ArcPointsError.swift */,
+				F45AB5C423BD500100B09E04 /* ParallelLinesError.swift */,
+				F45AB5C123BD4FF600B09E04 /* NonCoPlanarLinesError.swift */,
+				F45AB5BE23BD4FEA00B09E04 /* Line.swift */,
+				F45AB5BB23BD4FDC00B09E04 /* CoincidentLinesError.swift */,
+				F45AB5B823BD4E3E00B09E04 /* EdgeOverflowError.swift */,
+				F45AB5B523BD4E1300B09E04 /* Mesh.swift */,
+				F45AB5B223BD4E0200B09E04 /* TriangleError.swift */,
 				F45AB5AC23BD480800B09E04 /* PenTypes.swift */,
 				F45AB5A923BD47FC00B09E04 /* LineSeg.swift */,
 				F45AB5A323BD46D000B09E04 /* OrthoVol.swift */,
@@ -147,6 +198,7 @@
 				F45AB56C23BD3B5700B09E04 /* LaunchScreen.storyboard */,
 				F45AB56F23BD3B5700B09E04 /* Info.plist */,
 				F45AB56723BD3B5600B09E04 /* MeshTools.xcdatamodeld */,
+				F45AB5D623BD607C00B09E04 /* LadderCountError.swift */,
 			);
 			path = MeshTools;
 			sourceTree = "<group>";
@@ -266,20 +318,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45AB5CB23BD50B600B09E04 /* ParallelPlanesError.swift in Sources */,
 				F45AB56923BD3B5600B09E04 /* MeshTools.xcdatamodeld in Sources */,
 				F45AB5AD23BD480800B09E04 /* PenTypes.swift in Sources */,
+				F45AB5C523BD500100B09E04 /* ParallelLinesError.swift in Sources */,
 				F45AB59F23BD41D800B09E04 /* ZeroVectorError.swift in Sources */,
 				F45AB59623BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */,
+				F45AB5C223BD4FF600B09E04 /* NonCoPlanarLinesError.swift in Sources */,
 				F45AB56323BD3B5600B09E04 /* ViewController.swift in Sources */,
 				F45AB58B23BD410F00B09E04 /* Transform.swift in Sources */,
+				F45AB5B623BD4E1300B09E04 /* Mesh.swift in Sources */,
 				F45AB58D23BD410F00B09E04 /* Vector3D.swift in Sources */,
 				F45AB55F23BD3B5600B09E04 /* AppDelegate.swift in Sources */,
+				F45AB5B923BD4E3E00B09E04 /* EdgeOverflowError.swift in Sources */,
+				F45AB5D723BD607C00B09E04 /* LadderCountError.swift in Sources */,
+				F45AB5D423BD5DB600B09E04 /* ParallelError.swift in Sources */,
 				F45AB5A623BD473300B09E04 /* CoincidentPointsError.swift in Sources */,
+				F45AB5B323BD4E0200B09E04 /* TriangleError.swift in Sources */,
+				F45AB5BF23BD4FEA00B09E04 /* Line.swift in Sources */,
+				F45AB5CE23BD50C100B09E04 /* Plane.swift in Sources */,
 				F45AB56123BD3B5600B09E04 /* SceneDelegate.swift in Sources */,
 				F45AB59A23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */,
+				F45AB5BC23BD4FDC00B09E04 /* CoincidentLinesError.swift in Sources */,
 				F45AB5AA23BD47FC00B09E04 /* LineSeg.swift in Sources */,
 				F45AB5A423BD46D000B09E04 /* OrthoVol.swift in Sources */,
+				F45AB5C823BD50A900B09E04 /* ArcPointsError.swift in Sources */,
 				F45AB59323BD412A00B09E04 /* CoordinateSystem.swift in Sources */,
+				F45AB5D123BD5DAA00B09E04 /* CoincidentPlanesError.swift in Sources */,
 				F45AB59C23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */,
 				F45AB59023BD411E00B09E04 /* Point3D.swift in Sources */,
 			);
@@ -289,22 +354,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45AB5BD23BD4FDC00B09E04 /* CoincidentLinesError.swift in Sources */,
+				F45AB5C623BD500100B09E04 /* ParallelLinesError.swift in Sources */,
+				F45AB5D223BD5DAA00B09E04 /* CoincidentPlanesError.swift in Sources */,
 				F45AB5AE23BD480800B09E04 /* PenTypes.swift in Sources */,
 				F45AB58723BD40E700B09E04 /* TransformTests.swift in Sources */,
 				F45AB5A023BD41D800B09E04 /* ZeroVectorError.swift in Sources */,
 				F45AB59723BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */,
+				F45AB5D823BD607C00B09E04 /* LadderCountError.swift in Sources */,
+				F45AB5CF23BD50C100B09E04 /* Plane.swift in Sources */,
 				F45AB58823BD40E700B09E04 /* Point3DTests.swift in Sources */,
+				F45AB5C323BD4FF600B09E04 /* NonCoPlanarLinesError.swift in Sources */,
+				F45AB5C923BD50A900B09E04 /* ArcPointsError.swift in Sources */,
 				F45AB5B123BD491300B09E04 /* LineSegTests.swift in Sources */,
 				F45AB5A823BD474100B09E04 /* OrthoVol.swift in Sources */,
 				F45AB58C23BD410F00B09E04 /* Transform.swift in Sources */,
+				F45AB5B423BD4E0200B09E04 /* TriangleError.swift in Sources */,
 				F45AB58E23BD410F00B09E04 /* Vector3D.swift in Sources */,
 				F45AB57923BD3B5800B09E04 /* MeshToolsTests.swift in Sources */,
 				F45AB5A723BD473300B09E04 /* CoincidentPointsError.swift in Sources */,
 				F45AB58623BD40E700B09E04 /* Vector3DTests.swift in Sources */,
+				F45AB5D523BD5DB600B09E04 /* ParallelError.swift in Sources */,
 				F45AB59B23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */,
+				F45AB5BA23BD4E3E00B09E04 /* EdgeOverflowError.swift in Sources */,
+				F45AB5CC23BD50B600B09E04 /* ParallelPlanesError.swift in Sources */,
+				F45AB5B723BD4E1300B09E04 /* Mesh.swift in Sources */,
 				F45AB59423BD412A00B09E04 /* CoordinateSystem.swift in Sources */,
 				F45AB59D23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */,
 				F45AB59123BD411E00B09E04 /* Point3D.swift in Sources */,
+				F45AB5C023BD4FEA00B09E04 /* Line.swift in Sources */,
 				F45AB5A223BD46C100B09E04 /* OrthoVolTests.swift in Sources */,
 				F45AB5AB23BD47FC00B09E04 /* LineSeg.swift in Sources */,
 			);
