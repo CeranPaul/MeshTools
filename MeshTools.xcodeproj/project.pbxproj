@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,25 @@
 		F45AB56B23BD3B5700B09E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45AB56A23BD3B5700B09E04 /* Assets.xcassets */; };
 		F45AB56E23BD3B5700B09E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45AB56C23BD3B5700B09E04 /* LaunchScreen.storyboard */; };
 		F45AB57923BD3B5800B09E04 /* MeshToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB57823BD3B5800B09E04 /* MeshToolsTests.swift */; };
+		F45AB58623BD40E700B09E04 /* Vector3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58323BD40E700B09E04 /* Vector3DTests.swift */; };
+		F45AB58723BD40E700B09E04 /* TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58423BD40E700B09E04 /* TransformTests.swift */; };
+		F45AB58823BD40E700B09E04 /* Point3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58523BD40E700B09E04 /* Point3DTests.swift */; };
+		F45AB58B23BD410F00B09E04 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58923BD410F00B09E04 /* Transform.swift */; };
+		F45AB58C23BD410F00B09E04 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58923BD410F00B09E04 /* Transform.swift */; };
+		F45AB58D23BD410F00B09E04 /* Vector3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58A23BD410F00B09E04 /* Vector3D.swift */; };
+		F45AB58E23BD410F00B09E04 /* Vector3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58A23BD410F00B09E04 /* Vector3D.swift */; };
+		F45AB59023BD411E00B09E04 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58F23BD411E00B09E04 /* Point3D.swift */; };
+		F45AB59123BD411E00B09E04 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB58F23BD411E00B09E04 /* Point3D.swift */; };
+		F45AB59323BD412A00B09E04 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59223BD412A00B09E04 /* CoordinateSystem.swift */; };
+		F45AB59423BD412A00B09E04 /* CoordinateSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59223BD412A00B09E04 /* CoordinateSystem.swift */; };
+		F45AB59623BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59523BD41BC00B09E04 /* IdenticalVectorError.swift */; };
+		F45AB59723BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59523BD41BC00B09E04 /* IdenticalVectorError.swift */; };
+		F45AB59A23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59823BD41CC00B09E04 /* NonOrthogonalCSYSError.swift */; };
+		F45AB59B23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59823BD41CC00B09E04 /* NonOrthogonalCSYSError.swift */; };
+		F45AB59C23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59923BD41CC00B09E04 /* NonUnitDirectionError.swift */; };
+		F45AB59D23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59923BD41CC00B09E04 /* NonUnitDirectionError.swift */; };
+		F45AB59F23BD41D800B09E04 /* ZeroVectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59E23BD41D800B09E04 /* ZeroVectorError.swift */; };
+		F45AB5A023BD41D800B09E04 /* ZeroVectorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB59E23BD41D800B09E04 /* ZeroVectorError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +59,17 @@
 		F45AB57423BD3B5800B09E04 /* MeshToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeshToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45AB57823BD3B5800B09E04 /* MeshToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshToolsTests.swift; sourceTree = "<group>"; };
 		F45AB57A23BD3B5800B09E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45AB58323BD40E700B09E04 /* Vector3DTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3DTests.swift; sourceTree = "<group>"; };
+		F45AB58423BD40E700B09E04 /* TransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformTests.swift; sourceTree = "<group>"; };
+		F45AB58523BD40E700B09E04 /* Point3DTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3DTests.swift; sourceTree = "<group>"; };
+		F45AB58923BD410F00B09E04 /* Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		F45AB58A23BD410F00B09E04 /* Vector3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3D.swift; sourceTree = "<group>"; };
+		F45AB58F23BD411E00B09E04 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
+		F45AB59223BD412A00B09E04 /* CoordinateSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateSystem.swift; sourceTree = "<group>"; };
+		F45AB59523BD41BC00B09E04 /* IdenticalVectorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdenticalVectorError.swift; sourceTree = "<group>"; };
+		F45AB59823BD41CC00B09E04 /* NonOrthogonalCSYSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonOrthogonalCSYSError.swift; sourceTree = "<group>"; };
+		F45AB59923BD41CC00B09E04 /* NonUnitDirectionError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonUnitDirectionError.swift; sourceTree = "<group>"; };
+		F45AB59E23BD41D800B09E04 /* ZeroVectorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroVectorError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +111,14 @@
 		F45AB55D23BD3B5600B09E04 /* MeshTools */ = {
 			isa = PBXGroup;
 			children = (
+				F45AB59223BD412A00B09E04 /* CoordinateSystem.swift */,
+				F45AB58F23BD411E00B09E04 /* Point3D.swift */,
+				F45AB58923BD410F00B09E04 /* Transform.swift */,
+				F45AB58A23BD410F00B09E04 /* Vector3D.swift */,
+				F45AB59523BD41BC00B09E04 /* IdenticalVectorError.swift */,
+				F45AB59823BD41CC00B09E04 /* NonOrthogonalCSYSError.swift */,
+				F45AB59923BD41CC00B09E04 /* NonUnitDirectionError.swift */,
+				F45AB59E23BD41D800B09E04 /* ZeroVectorError.swift */,
 				F45AB55E23BD3B5600B09E04 /* AppDelegate.swift */,
 				F45AB56023BD3B5600B09E04 /* SceneDelegate.swift */,
 				F45AB56223BD3B5600B09E04 /* ViewController.swift */,
@@ -96,6 +134,9 @@
 		F45AB57723BD3B5800B09E04 /* MeshToolsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F45AB58523BD40E700B09E04 /* Point3DTests.swift */,
+				F45AB58423BD40E700B09E04 /* TransformTests.swift */,
+				F45AB58323BD40E700B09E04 /* Vector3DTests.swift */,
 				F45AB57823BD3B5800B09E04 /* MeshToolsTests.swift */,
 				F45AB57A23BD3B5800B09E04 /* Info.plist */,
 			);
@@ -160,7 +201,7 @@
 				};
 			};
 			buildConfigurationList = F45AB55623BD3B5600B09E04 /* Build configuration list for PBXProject "MeshTools" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -204,9 +245,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F45AB56923BD3B5600B09E04 /* MeshTools.xcdatamodeld in Sources */,
+				F45AB59F23BD41D800B09E04 /* ZeroVectorError.swift in Sources */,
+				F45AB59623BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */,
 				F45AB56323BD3B5600B09E04 /* ViewController.swift in Sources */,
+				F45AB58B23BD410F00B09E04 /* Transform.swift in Sources */,
+				F45AB58D23BD410F00B09E04 /* Vector3D.swift in Sources */,
 				F45AB55F23BD3B5600B09E04 /* AppDelegate.swift in Sources */,
 				F45AB56123BD3B5600B09E04 /* SceneDelegate.swift in Sources */,
+				F45AB59A23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */,
+				F45AB59323BD412A00B09E04 /* CoordinateSystem.swift in Sources */,
+				F45AB59C23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */,
+				F45AB59023BD411E00B09E04 /* Point3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +263,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45AB58723BD40E700B09E04 /* TransformTests.swift in Sources */,
+				F45AB5A023BD41D800B09E04 /* ZeroVectorError.swift in Sources */,
+				F45AB59723BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */,
+				F45AB58823BD40E700B09E04 /* Point3DTests.swift in Sources */,
+				F45AB58C23BD410F00B09E04 /* Transform.swift in Sources */,
+				F45AB58E23BD410F00B09E04 /* Vector3D.swift in Sources */,
 				F45AB57923BD3B5800B09E04 /* MeshToolsTests.swift in Sources */,
+				F45AB58623BD40E700B09E04 /* Vector3DTests.swift in Sources */,
+				F45AB59B23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */,
+				F45AB59423BD412A00B09E04 /* CoordinateSystem.swift in Sources */,
+				F45AB59D23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */,
+				F45AB59123BD411E00B09E04 /* Point3D.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
