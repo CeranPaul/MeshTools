@@ -222,6 +222,7 @@ public class Mesh   {
     /// - Parameters:
     ///   - duo:  Pair of points for one side
     ///   - oppo: Points on opposite side
+    /// - Throws: LadderCountError if oppo contains more than six points
     public static func duoLadder(duo: [Point3D], oppo: [Point3D]) throws -> Mesh   {
         
         guard oppo.count < 7  else  { throw LadderCountError(tallyL: duo.count, tallyR: oppo.count) }   // Needs a better error

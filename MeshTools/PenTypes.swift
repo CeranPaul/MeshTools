@@ -10,6 +10,7 @@ import Foundation
 
 /// Meaning that can be associated with various curves.  Used to set pen characteristics in the drawing routine.
 /// - Notes:  Will probably vary for each different app.
+/// - Notes:  Needs to be independent from Easel so that various curve entites can be tested.
 public enum PenTypes {
     
     case Boundary
@@ -18,5 +19,7 @@ public enum PenTypes {
     
     case Interior
         
+    case Blanket
+       
 }
 

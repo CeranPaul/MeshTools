@@ -184,45 +184,45 @@ public struct Line: Equatable {
     }
     
     
-//    /// Generate a point by intersecting two Lines
-//    /// - Parameters:
-//    ///   - straightA:  First test line
-//    ///   - straightB:  Second test line
-//    /// - Throws: CoincidentLinesError if the inputs are the same
-//    /// - Throws: ParallelLinesError if the inputs are parallel
-//    /// - Throws: NonCoPlanarLinesError if the inputs don't lie in the same plane
-//    public static func intersectTwo (straightA: Line, straightB: Line) throws -> Point3D  {
-//        
-//        guard !Line.isCoincident(straightA: straightA, straightB: straightB) else { throw CoincidentLinesError(enil: straightA)}
-//        
-//        guard !Line.isParallel(straightA: straightA, straightB: straightB)  else { throw ParallelLinesError(enil: straightA) }
-//        
-//        guard Line.isCoplanar(straightA: straightA, straightB: straightB)  else { throw NonCoPlanarLinesError(enilA: straightA, enilB: straightB) }
-//        
-//        if Line.isCoincident(straightA: straightA, pip: straightB.getOrigin())   { return straightB.getOrigin() }
-//        if Line.isCoincident(straightA: straightB, pip: straightA.getOrigin())   { return straightA.getOrigin() }
-//        if straightA.getOrigin() == straightB.getOrigin()   { return straightA.getOrigin() }
-//        
-//        
-//        let bridgeVector = Vector3D.built(from: straightA.getOrigin(), towards: straightB.getOrigin())
-//        
-//        /// Components (vectors) of the full-length bridge vector relative to Line straightA
-//        let comps = straightA.resolveRelativeVec(arrow: bridgeVector)
-//        
-//        var perpDir = comps.perp
-//        perpDir.normalize()  // The coincidence checks above should keep the vector from having zero length
-//        
-//        let propor = Vector3D.dotProduct(lhs: perpDir, rhs: straightB.getDirection())
-//        let perpLen = comps.perp.length()
-//        
-//        /// Length along B to the intersection
-//        let lengthB =  -1.0 * perpLen / propor;
-//        
-//        let alongB = straightB.getDirection() * lengthB;
-//        
-//        return Point3D.offset(pip: straightB.getOrigin(), jump: alongB);
-//    }
-//    
+    /// Generate a point by intersecting two Lines
+    /// - Parameters:
+    ///   - straightA:  First test line
+    ///   - straightB:  Second test line
+    /// - Throws: CoincidentLinesError if the inputs are the same
+    /// - Throws: ParallelLinesError if the inputs are parallel
+    /// - Throws: NonCoPlanarLinesError if the inputs don't lie in the same plane
+    public static func intersectTwo (straightA: Line, straightB: Line) throws -> Point3D  {
+        
+        guard !Line.isCoincident(straightA: straightA, straightB: straightB) else { throw CoincidentLinesError(enil: straightA)}
+        
+        guard !Line.isParallel(straightA: straightA, straightB: straightB)  else { throw ParallelLinesError(enil: straightA) }
+        
+        guard Line.isCoplanar(straightA: straightA, straightB: straightB)  else { throw NonCoPlanarLinesError(enilA: straightA, enilB: straightB) }
+        
+        if Line.isCoincident(straightA: straightA, pip: straightB.getOrigin())   { return straightB.getOrigin() }
+        if Line.isCoincident(straightA: straightB, pip: straightA.getOrigin())   { return straightA.getOrigin() }
+        if straightA.getOrigin() == straightB.getOrigin()   { return straightA.getOrigin() }
+        
+        
+        let bridgeVector = Vector3D.built(from: straightA.getOrigin(), towards: straightB.getOrigin())
+        
+        /// Components (vectors) of the full-length bridge vector relative to Line straightA
+        let comps = straightA.resolveRelativeVec(arrow: bridgeVector)
+        
+        var perpDir = comps.perp
+        perpDir.normalize()  // The coincidence checks above should keep the vector from having zero length
+        
+        let propor = Vector3D.dotProduct(lhs: perpDir, rhs: straightB.getDirection())
+        let perpLen = comps.perp.length()
+        
+        /// Length along B to the intersection
+        let lengthB =  -1.0 * perpLen / propor;
+        
+        let alongB = straightB.getDirection() * lengthB;
+        
+        return Point3D.offset(pip: straightB.getOrigin(), jump: alongB);
+    }
+    
     
     
     
