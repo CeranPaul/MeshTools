@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/CoordinateSystem.swift",
+      "line": 111,
+      "symbol": "CoordinateSystem.getOrigin()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/CoordinateSystem.swift",
+      "line": 117,
+      "symbol": "CoordinateSystem.getAxisX()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/CoordinateSystem.swift",
+      "line": 124,
+      "symbol": "CoordinateSystem.getAxisY()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/CoordinateSystem.swift",
+      "line": 131,
+      "symbol": "CoordinateSystem.getAxisZ()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/LineSeg.swift",
+      "line": 22,
+      "symbol": "LineSeg.parameterRange",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Mesh.swift",
+      "line": 610,
+      "symbol": "CommonEdge.endA",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Mesh.swift",
+      "line": 611,
+      "symbol": "CommonEdge.endB",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/NonOrthogonalCSYSError.swift",
+      "line": 11,
+      "symbol": "NonOrthogonalCSYSError",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/PenTypes.swift",
+      "line": 16,
+      "symbol": "PenTypes.Boundary",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/PenTypes.swift",
+      "line": 18,
+      "symbol": "PenTypes.Ordinary",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/PenTypes.swift",
+      "line": 20,
+      "symbol": "PenTypes.Interior",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/PenTypes.swift",
+      "line": 22,
+      "symbol": "PenTypes.Blanket",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 320,
+      "symbol": "Axis.x",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 322,
+      "symbol": "Axis.y",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 324,
+      "symbol": "Axis.z",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 334,
+      "symbol": "RowMtx4.init(valOne:valTwo:valThree:valFour:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 342,
+      "symbol": "RowMtx4.init(vecIn:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 351,
+      "symbol": "RowMtx4.init(ptIn:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 360,
+      "symbol": "RowMtx4.toPoint()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 366,
+      "symbol": "RowMtx4.toVector()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/Transform.swift",
+      "line": 375,
+      "symbol": "==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools/MeshTools/WorkBench.swift",
+      "line": 13,
+      "symbol": "WorkBench",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/paulhollingshead/Desktop/MeshTools/MeshTools"
+}

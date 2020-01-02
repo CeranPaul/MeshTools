@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoordinateSystem Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/CoordinateSystem" class="dashAnchor"></a>
+    <a title="CoordinateSystem Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (86% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CoordinateSystem Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools20CoincidentLinesErrorC">CoincidentLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21CoincidentPointsErrorC">CoincidentPointsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoordinateSystem.html">CoordinateSystem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools20IdenticalVectorErrorC">IdenticalVectorError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools16LadderCountErrorC">LadderCountError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LineSeg.html">LineSeg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Mesh.html">Mesh</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21NonCoPlanarLinesErrorC">NonCoPlanarLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools22NonOrthogonalCSYSErrorC">NonOrthogonalCSYSError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21NonUnitDirectionErrorC">NonUnitDirectionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools18ParallelLinesErrorC">ParallelLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RowMtx4.html">RowMtx4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transform.html">Transform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools9WorkBenchC">WorkBench</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools15ZeroVectorErrorC">ZeroVectorError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Axis.html">Axis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PenTypes.html">PenTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA7RowMtx4CAD_AA9TransformCtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA8Vector3DVAD_SdtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA9TransformCAD_ADtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1poiyAA8Vector3DVAD_ADtF">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1soiyAA8Vector3DVAD_ADtF">-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA16CoordinateSystemC_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA4LineV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA5PlaneV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA9TransformC_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CommonEdge.html">CommonEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Facet.html">Facet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Line.html">Line</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OrthoVol.html">OrthoVol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Plane.html">Plane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Point3D.html">Point3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector3D.html">Vector3D</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CoordinateSystem</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">CoordinateSystem</span></code></pre>
+
+                </div>
+              </div>
+            <p>Three coordinates and three orthogonal axes</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Construct an equivalent to the global CSYS.
+Origin can be changed by static function &lsquo;relocate&rsquo;.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testFidelity1&rsquo; under CoordinateSystemTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC4spot5alpha4beta5gammaAcA7Point3DV_AA8Vector3DVA2KtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(spot:alpha:beta:gamma:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC4spot5alpha4beta5gammaAcA7Point3DV_AA8Vector3DVA2KtKcfc">init(spot:alpha:beta:gamma:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Construct from a point and three vectors</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <ul>
+<li>NonUnitDirectionError for any bad input vector</li>
+<li>NonOrthogonalCSYSError if the inputs, as a set, aren&rsquo;t good</li>
+</ul>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testFidelity2&rsquo; under CoordinateSystemTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">spot</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">beta</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">gamma</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>spot</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The origin of the CSYS</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alpha</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A unit vector representing an axis</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beta</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another unit vector - orthogonal to others</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gamma</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Final unit vector</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC4spot10direction110direction28useFirst11verticalRefAcA7Point3DV_AA8Vector3DVALS2btKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(spot:direction1:direction2:useFirst:verticalRef:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC4spot10direction110direction28useFirst11verticalRefAcA7Point3DV_AA8Vector3DVALS2btKcfc">init(spot:direction1:direction2:useFirst:verticalRef:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generate from two vectors and a point.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <ul>
+<li>NonUnitDirectionError for any bad input vector</li>
+</ul>
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testFidelity3&rsquo; under CoordinateSystemTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">spot</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">direction1</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">direction2</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">useFirst</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">verticalRef</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>spot</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Point to serve as the origin</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>direction1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Vector3D</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>direction2</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Vector3D that is not parallel or opposite to direction1</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>useFirst</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Use the first input vector as the reference direction?</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>verticalRef</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Does the reference direction represent vertical or horizontal in the local plane?</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC9getOriginAA7Point3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getOrigin()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC9getOriginAA7Point3DVyF">getOrigin()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOrigin</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC8getAxisXAA8Vector3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getAxisX()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC8getAxisXAA8Vector3DVyF">getAxisX()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAxisX</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC8getAxisYAA8Vector3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getAxisY()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC8getAxisYAA8Vector3DVyF">getAxisY()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAxisY</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC8getAxisZAA8Vector3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getAxisZ()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC8getAxisZAA8Vector3DVyF">getAxisZ()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAxisZ</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC10isMutOrtho3uno3dos4tresSbAA8Vector3DV_A2ItFZ"></a>
+                    <a name="//apple_ref/swift/Method/isMutOrtho(uno:dos:tres:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC10isMutOrtho3uno3dos4tresSbAA8Vector3DV_A2ItFZ">isMutOrtho(uno:dos:tres:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check to see that these three vectors are mutually orthogonal</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testIsMutOrtho&rsquo; under CoordinateSystemTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">isMutOrtho</span><span class="p">(</span><span class="nv">uno</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">dos</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">tres</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uno</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unit vector to serve as an axis</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dos</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another unit vector</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tres</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The final unit vector
+Returns: Simple flag</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools16CoordinateSystemC8relocate12startingCSYS12betterOriginA2C_AA7Point3DVtFZ"></a>
+                    <a name="//apple_ref/swift/Method/relocate(startingCSYS:betterOrigin:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools16CoordinateSystemC8relocate12startingCSYS12betterOriginA2C_AA7Point3DVtFZ">relocate(startingCSYS:betterOrigin:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create from an existing CSYS, but use a different origin</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testRelocate&rsquo; under CoordinateSystemTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">relocate</span><span class="p">(</span><span class="nv">startingCSYS</span><span class="p">:</span> <span class="kt">CoordinateSystem</span><span class="p">,</span> <span class="nv">betterOrigin</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CoordinateSystem</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startingCSYS</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Desired set of orientations</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>betterOrigin</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New location</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
