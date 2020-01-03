@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vector3D Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Vector3D" class="dashAnchor"></a>
+    <a title="Vector3D Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (86% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Vector3D Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools20CoincidentLinesErrorC">CoincidentLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21CoincidentPointsErrorC">CoincidentPointsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoordinateSystem.html">CoordinateSystem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools20IdenticalVectorErrorC">IdenticalVectorError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools16LadderCountErrorC">LadderCountError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LineSeg.html">LineSeg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Mesh.html">Mesh</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21NonCoPlanarLinesErrorC">NonCoPlanarLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools22NonOrthogonalCSYSErrorC">NonOrthogonalCSYSError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21NonUnitDirectionErrorC">NonUnitDirectionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools18ParallelLinesErrorC">ParallelLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RowMtx4.html">RowMtx4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transform.html">Transform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools9WorkBenchC">WorkBench</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools15ZeroVectorErrorC">ZeroVectorError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Axis.html">Axis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PenTypes.html">PenTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA7RowMtx4CAD_AA9TransformCtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA8Vector3DVAD_SdtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA9TransformCAD_ADtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1poiyAA8Vector3DVAD_ADtF">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1soiyAA8Vector3DVAD_ADtF">-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA16CoordinateSystemC_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA4LineV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA5PlaneV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA9TransformC_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CommonEdge.html">CommonEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Facet.html">Facet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Line.html">Line</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OrthoVol.html">OrthoVol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Plane.html">Plane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Point3D.html">Point3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector3D.html">Vector3D</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Vector3D</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Vector3D</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A direction built from three orthogonal components
+Default constructor suffices</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV1i1j1kACSd_S2dtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(i:j:k:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV1i1j1kACSd_S2dtcfc">init(i:j:k:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The simplest and only initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">i</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">j</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">k</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV9normalizeyyF"></a>
+                    <a name="//apple_ref/swift/Method/normalize()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV9normalizeyyF">normalize()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Destructively make this a unit vector</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testNormalize&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">normalize</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV6lengthSdyF"></a>
+                    <a name="//apple_ref/swift/Method/length()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV6lengthSdyF">length()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Figure the combined length of all three components</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testLength&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">length</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV6isZeroSbyF"></a>
+                    <a name="//apple_ref/swift/Method/isZero()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV6isZeroSbyF">isZero()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check to see if the vector has zero length</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testIsZero&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isZero</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV6isUnitSbyF"></a>
+                    <a name="//apple_ref/swift/Method/isUnit()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV6isUnitSbyF">isUnit()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check to see if this is a unit vector</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testIsUnit&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isUnit</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV7reverseACyF"></a>
+                    <a name="//apple_ref/swift/Method/reverse()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV7reverseACyF">reverse()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Construct a vector with the opposite direction</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testReverse&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reverse</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Vector3D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV4perpACyF"></a>
+                    <a name="//apple_ref/swift/Method/perp()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV4perpACyF">perp()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Construct a vector re-directed one quarter turn away in the counterclockwise direction in the XY plane
+Use crossProduct to do this for a more general case</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">perp</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Vector3D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV5built4from7towards4unitAcA7Point3DV_AISbtFZ"></a>
+                    <a name="//apple_ref/swift/Method/built(from:towards:unit:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV5built4from7towards4unitAcA7Point3DV_AISbtFZ">built(from:towards:unit:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Construct vector from first input point towards the second
+Does not check for a zero vector</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testBuiltFrom&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">built</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">towards</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">unit</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Vector3D</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>from</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Start point</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>towards</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>End point</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether or not the result should be a unit vector</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV10dotProduct3lhs3rhsSdAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/dotProduct(lhs:rhs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV10dotProduct3lhs3rhsSdAC_ACtFZ">dotProduct(lhs:rhs:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Standard definition of dot product</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testDot&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">dotProduct</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV12crossProduct3lhs3rhsA2C_ACtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/crossProduct(lhs:rhs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV12crossProduct3lhs3rhsA2C_ACtKFZ">crossProduct(lhs:rhs:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Standard definition of cross product
+This makes no assumptions or guarantees about normalized vectors</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    IdenticalVectorError if the inputs are identical or opposite
+
+</div><div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    IdenticalVectorError if the inputs are scaled versions of each other
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testCross&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">crossProduct</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Vector3D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV10isOpposite3lhs3rhsSbAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/isOpposite(lhs:rhs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV10isOpposite3lhs3rhsSbAC_ACtFZ">isOpposite(lhs:rhs:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check for vectors with the same direction but a different sense
+This assumes that they are of identical length</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    isScaled()
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testIsOpposite&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">isOpposite</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV8isScaled3lhs3rhsSbAC_ACtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/isScaled(lhs:rhs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV8isScaled3lhs3rhsSbAC_ACtKFZ">isScaled(lhs:rhs:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check to see if one vector is a scaled version of the other
+Could be used before doing cross product</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    ZeroVectorError if either input is of zero length
+
+</div><div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    isOpposite()
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">isScaled</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV9findAngle11baselineVec9measureTo4perpSdAC_A2CtKFZ"></a>
+                    <a name="//apple_ref/swift/Method/findAngle(baselineVec:measureTo:perp:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV9findAngle11baselineVec9measureTo4perpSdAC_A2CtKFZ">findAngle(baselineVec:measureTo:perp:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Find a positive or negative angle between two unit vectors</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    NonUnitDirectionError
+
+</div><div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testFindAngle&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">findAngle</span><span class="p">(</span><span class="nv">baselineVec</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">measureTo</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">perp</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>baselineVec</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unit direction vector to be measured from</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>measureTo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unit direction vector of interest</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>perp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unit normal vector used to determine positive and negative</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Angle in radians between -M_PI and M_PI</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV6makeXZ5angleACSd_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/makeXZ(angle:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV6makeXZ5angleACSd_tFZ">makeXZ(angle:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a Vector3D in the XY plane</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">makeXZ</span><span class="p">(</span><span class="nv">angle</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Vector3D</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools8Vector3DV2eeoiySbAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools8Vector3DV2eeoiySbAC_ACtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Compare each component of the vector for equality</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;testEquals&rsquo; under Vector3DTests
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Vector3D</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LineSeg Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/LineSeg" class="dashAnchor"></a>
+    <a title="LineSeg Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (86% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        LineSeg Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools20CoincidentLinesErrorC">CoincidentLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21CoincidentPointsErrorC">CoincidentPointsError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CoordinateSystem.html">CoordinateSystem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools20IdenticalVectorErrorC">IdenticalVectorError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools16LadderCountErrorC">LadderCountError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LineSeg.html">LineSeg</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Mesh.html">Mesh</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21NonCoPlanarLinesErrorC">NonCoPlanarLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools22NonOrthogonalCSYSErrorC">NonOrthogonalCSYSError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools21NonUnitDirectionErrorC">NonUnitDirectionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools18ParallelLinesErrorC">ParallelLinesError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RowMtx4.html">RowMtx4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Transform.html">Transform</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools9WorkBenchC">WorkBench</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:9MeshTools15ZeroVectorErrorC">ZeroVectorError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Axis.html">Axis</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PenTypes.html">PenTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA7RowMtx4CAD_AA9TransformCtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA8Vector3DVAD_SdtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1moiyAA9TransformCAD_ADtF">*(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1poiyAA8Vector3DVAD_ADtF">+(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools1soiyAA8Vector3DVAD_ADtF">-(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA16CoordinateSystemC_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA4LineV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA5PlaneV_ADtF">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:9MeshTools2eeoiySbAA9TransformC_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CommonEdge.html">CommonEdge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Facet.html">Facet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Line.html">Line</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OrthoVol.html">OrthoVol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Plane.html">Plane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Point3D.html">Point3D</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Vector3D.html">Vector3D</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>LineSeg</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">LineSeg</span></code></pre>
+
+                </div>
+              </div>
+            <p>A wire between two points.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC5usageAA8PenTypesOvp"></a>
+                    <a name="//apple_ref/swift/Property/usage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC5usageAA8PenTypesOvp">usage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The enum that hints at the meaning of the curve</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">usage</span><span class="p">:</span> <span class="kt"><a href="../Enums/PenTypes.html">PenTypes</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC14parameterRangeSNySdGvp"></a>
+                    <a name="//apple_ref/swift/Property/parameterRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC14parameterRangeSNySdGvp">parameterRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">parameterRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC4end14end2AcA7Point3DV_AGtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(end1:end2:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC4end14end2AcA7Point3DV_AGtKcfc">init(end1:end2:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a line segment from two points</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    CoincidentPointsError
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">end1</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">end2</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9getOneEndAA7Point3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getOneEnd()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9getOneEndAA7Point3DVyF">getOneEnd()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch the location of an end</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;getOtherEnd()&rsquo;
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getOneEnd</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC11getOtherEndAA7Point3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getOtherEnd()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC11getOtherEndAA7Point3DVyF">getOtherEnd()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch the location of the opposite end</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    &lsquo;getOneEnd()&rsquo;
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getOtherEnd</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC7reverseyyF"></a>
+                    <a name="//apple_ref/swift/Method/reverse()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC7reverseyyF">reverse()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flip the order of the end points  Used to align members of a Perimeter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">reverse</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9setIntent7purposeyAA8PenTypesO_tF"></a>
+                    <a name="//apple_ref/swift/Method/setIntent(purpose:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9setIntent7purposeyAA8PenTypesO_tF">setIntent(purpose:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Attach new meaning to the curve</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setIntent</span><span class="p">(</span><span class="nv">purpose</span><span class="p">:</span> <span class="kt"><a href="../Enums/PenTypes.html">PenTypes</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9getExtentAA8OrthoVolVyF"></a>
+                    <a name="//apple_ref/swift/Method/getExtent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9getExtentAA8OrthoVolVyF">getExtent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the box that bounds the curve</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getExtent</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/OrthoVol.html">OrthoVol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC7pointAt1tAA7Point3DVSd_tKF"></a>
+                    <a name="//apple_ref/swift/Method/pointAt(t:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC7pointAt1tAA7Point3DVSd_tKF">pointAt(t:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Find the point along this line segment specified by the parameter &lsquo;t&rsquo;
+Assumes 0 &lt; t &lt; 1</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">pointAt</span><span class="p">(</span><span class="nv">t</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9transform6xirtamAcA9TransformC_tKF"></a>
+                    <a name="//apple_ref/swift/Method/transform(xirtam:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9transform6xirtamAcA9TransformC_tKF">transform(xirtam:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Move, rotate, and scale by a matrix</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    CoincidentPointsError if it was scaled to be very small
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transform</span><span class="p">(</span><span class="nv">xirtam</span><span class="p">:</span> <span class="kt"><a href="../Classes/Transform.html">Transform</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">LineSeg</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC4draw7context5tformySo12CGContextRefa_So17CGAffineTransformVtF"></a>
+                    <a name="//apple_ref/swift/Method/draw(context:tform:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC4draw7context5tformySo12CGContextRefa_So17CGAffineTransformVtF">draw(context:tform:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Plot the line segment.  This will be called by the UIView &lsquo;drawRect&rsquo; function</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">draw</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">CGContext</span><span class="p">,</span> <span class="nv">tform</span><span class="p">:</span> <span class="kt">CGAffineTransform</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>In-use graphics framework</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Model-to-display transform</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC18resolveRelativeVec5speckAA8Vector3DV5along_AG4perptAA7Point3DV_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolveRelativeVec(speck:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC18resolveRelativeVec5speckAA8Vector3DV5along_AG4perptAA7Point3DV_tF">resolveRelativeVec(speck:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Find the position of a point relative to the LineSeg</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resolveRelativeVec</span><span class="p">(</span><span class="nv">speck</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">along</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">,</span> <span class="nv">perp</span><span class="p">:</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Tuple of vectors - one along the seg, other perp to it</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC15resolveRelative5speckSd5along_Sd4awaytAA7Point3DV_tF"></a>
+                    <a name="//apple_ref/swift/Method/resolveRelative(speck:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC15resolveRelative5speckSd5along_Sd4awaytAA7Point3DV_tF">resolveRelative(speck:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Find two distances describing the position of a point relative to the LineSeg.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resolveRelative</span><span class="p">(</span><span class="nv">speck</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">along</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">away</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>speck</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Point of interest</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Tuple of distances - one along the seg, other away from it</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC12getDirectionAA8Vector3DVyF"></a>
+                    <a name="//apple_ref/swift/Method/getDirection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC12getDirectionAA8Vector3DVyF">getDirection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a unit vector showing direction</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getDirection</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Unit vector to indicate direction</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9tangentAt1tAA8Vector3DVSd_tF"></a>
+                    <a name="//apple_ref/swift/Method/tangentAt(t:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9tangentAt1tAA8Vector3DVSd_tF">tangentAt(t:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return the tangent vector, which won&rsquo;t depend on the input parameter
+Some notations show &ldquo;t&rdquo; as the parameter, instead of &ldquo;u&rdquo;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tangentAt</span><span class="p">(</span><span class="nv">t</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Vector3D.html">Vector3D</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>tan:  Non-normalized vector</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC6clipTo4stub8keepNearAcA7Point3DV_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/clipTo(stub:keepNear:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC6clipTo4stub8keepNearAcA7Point3DV_SbtF">clipTo(stub:keepNear:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a trimmed version</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    No checks are made to see that stub lies on the segment
+
+</div><div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Does not have a Unit Test
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">clipTo</span><span class="p">(</span><span class="nv">stub</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">keepNear</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">LineSeg</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>stub</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New terminating point</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keepNear</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Retain the near or far remnant?</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new LineSeg</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9crosshair3pip10halfLengthSayACGAA7Point3DV_SdtFZ"></a>
+                    <a name="//apple_ref/swift/Method/crosshair(pip:halfLength:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9crosshair3pip10halfLengthSayACGAA7Point3DV_SdtFZ">crosshair(pip:halfLength:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Draw crosshairs to show point locations
+This needs to be added to SketchGen</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">crosshair</span><span class="p">(</span><span class="nv">pip</span><span class="p">:</span> <span class="kt"><a href="../Structs/Point3D.html">Point3D</a></span><span class="p">,</span> <span class="nv">halfLength</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">LineSeg</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pip</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Location to be illustrated</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>halfLength</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional size for half of each stroke</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of three LineSeg&rsquo;s to be plotted</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC10isCrossing4chopSbAC_tF"></a>
+                    <a name="//apple_ref/swift/Method/isCrossing(chop:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC10isCrossing4chopSbAC_tF">isCrossing(chop:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See if another segment crosses this one
+Used for seeing if a screen gesture cuts across the current seg</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    Does not have a Unit Test
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isCrossing</span><span class="p">(</span><span class="nv">chop</span><span class="p">:</span> <span class="kt">LineSeg</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC9findCrown8smallerT7largerTS2d_SdtF"></a>
+                    <a name="//apple_ref/swift/Method/findCrown(smallerT:largerT:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC9findCrown8smallerT7largerTS2d_SdtF">findCrown(smallerT:largerT:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate the crown over a small segment</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">findCrown</span><span class="p">(</span><span class="nv">smallerT</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">largerT</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9MeshTools7LineSegC8findStep14allowableCrown8currentT10increasingS2d_SdSbtF"></a>
+                    <a name="//apple_ref/swift/Method/findStep(allowableCrown:currentT:increasing:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9MeshTools7LineSegC8findStep14allowableCrown8currentT10increasingS2d_SdSbtF">findStep(allowableCrown:currentT:increasing:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Find the change in parameter that meets the crown requirement</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">findStep</span><span class="p">(</span><span class="nv">allowableCrown</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">currentT</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">increasing</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>allowableCrown</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Acceptable deviation from curve</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currentT</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Present value of the driving parameter</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>increasing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the change in parameter should be up or down</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New value for driving parameter</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-01-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
