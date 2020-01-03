@@ -1,6 +1,6 @@
 //
 //  OrthoVol.swift
-//  SketchCurves
+//  MeshTools
 //
 //  Created by Paul on 10/30/15.
 //  Copyright © 2018 Ceran Digital Media. All rights reserved.  See LICENSE.md
@@ -17,8 +17,8 @@ public struct OrthoVol   {
     fileprivate var rangeZ: ClosedRange<Double>
     
     
-    /// Rudimentary init
-    /// Does not check for positive ranges
+    /// Rudimentary init.
+    /// Will reverse inputs to get a positive range in each axis.
     public init(minX : Double, maxX: Double, minY: Double, maxY: Double, minZ: Double, maxZ: Double)   {
         
         let deltaX = maxX - minX
@@ -56,8 +56,10 @@ public struct OrthoVol   {
        
         if skinnyX || skinnyY || skinnyZ   {  // One or more of the sizes = 0.0
             
-            let sep = sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ)
-            let halfMin = sep / 10.0   // Used to keep the box from becoming a whisker
+            let diagonalDist = sqrt(deltaX * deltaX + deltaY * deltaY + deltaZ * deltaZ)
+            
+            /// Half of the minimum thickness.  Used to keep the box from becoming a whisker.
+            let halfMin = diagonalDist / 10.0   // Used to keep the box from becoming a whisker
             
             if skinnyX   {
                 rangeX = ClosedRange(uncheckedBounds: (lower: minX - halfMin, upper: minX + halfMin))
@@ -74,16 +76,24 @@ public struct OrthoVol   {
         
     }
     
-    /// Build a brick from two points
-    /// Will prevent having a zero dimension for any of the three axes  
+    
+    /// Build a brick from two points.
+    /// Will insert a proportional value to avoid having a zero dimension for any of the three axes.
+    /// - Parameters:
+    ///   - corner1: A point on one corner
+    ///   - corner2: Other corner
     /// - Throws: CoincidentPointsError
     public init(corner1: Point3D, corner2: Point3D) throws  {
         
         // Bail out if the input points are coincident
         guard corner1 != corner2 else { throw CoincidentPointsError(dupePt: corner1) }
         
-        let sep = Point3D.dist(pt1: corner1, pt2: corner2)
-        let halfMin = sep / 10.0   // Used to keep the box from becoming a whisker
+        
+        let diagonal = Point3D.dist(pt1: corner1, pt2: corner2)
+        
+        /// Half of the minimum thickness.  Used to keep the box from becoming a whisker.
+        let halfMin = diagonal / 10.0
+        
         
         var leastX: Double
         var mostX: Double
@@ -96,6 +106,7 @@ public struct OrthoVol   {
             mostX = max(corner1.x, corner2.x)
         }
         
+        
         var leastY: Double
         var mostY: Double
         
@@ -106,6 +117,7 @@ public struct OrthoVol   {
             leastY = min(corner1.y, corner2.y)
             mostY = max(corner1.y, corner2.y)
         }
+        
         
         var leastZ: Double
         var mostZ: Double
@@ -127,22 +139,22 @@ public struct OrthoVol   {
     
     
     /// Simple getter for starting corner
-    func  getOrigin() -> Point3D  {
+    public func getOrigin() -> Point3D  {
         return Point3D(x: rangeX.lowerBound, y: rangeY.lowerBound, z: rangeZ.lowerBound)
     }
     
     /// Simple getter for the width
-    func  getWidth() -> Double  {
+    public func getWidth() -> Double  {
         return rangeX.upperBound - rangeX.lowerBound
     }
     
     /// Simple getter for the height
-    func  getHeight() -> Double  {
+    public func getHeight() -> Double  {
         return rangeY.upperBound - rangeY.lowerBound
     }
     
     /// Simple getter for the depth
-    func  getDepth() -> Double  {
+    public func getDepth() -> Double  {
         return rangeZ.upperBound - rangeZ.lowerBound
     }
     
@@ -157,6 +169,7 @@ public struct OrthoVol   {
         return Point3D(x: midX, y: midY, z: midZ)
     }
     
+    
     /// Find the longest distance in any direction to set up display scaling
     /// - Returns: Diagonal length
    public func getLongest() -> Double   {
@@ -169,6 +182,7 @@ public struct OrthoVol   {
         
         return long
     }
+    
     
     /// See whether the two volumes overlap
     /// - Parameters:
@@ -193,14 +207,16 @@ public struct OrthoVol   {
     public static func surrounds(big: OrthoVol, little: OrthoVol) -> Bool   {
         
         let flagX = big.rangeX.contains(little.rangeX.lowerBound)  && big.rangeX.contains(little.rangeX.upperBound)
+        
         let flagY = big.rangeY.contains(little.rangeY.lowerBound)  && big.rangeY.contains(little.rangeY.upperBound)
+        
         let flagZ = big.rangeZ.contains(little.rangeZ.lowerBound)  && big.rangeZ.contains(little.rangeZ.upperBound)
 
         return flagX && flagY && flagZ
     }
     
     
-    /// Move, rotate, and/or scale by a matrix
+    /// Move, rotate, and/or scale by a matrix.
     /// Should this become a class function since it is creating a new volume?  Or a constructor?
     /// - Parameters:
     ///   - xirtam:  Matrix for the intended transformation
@@ -258,10 +274,11 @@ public struct OrthoVol   {
 }   // End of definition for struct OrthoVol
 
 
-/// Construct a volume that combines the two input volumes
+/// Construct a volume that combines the two input volumes.
 /// - Parameters:
 ///   - lhs: One volume
 ///   - rhs: Another brick
+/// - Returns: A new OrthoVol.
 func + (lhs: OrthoVol, rhs: OrthoVol) -> OrthoVol   {
     
     let leastX = min(lhs.rangeX.lowerBound, rhs.rangeX.lowerBound)

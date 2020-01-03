@@ -75,6 +75,7 @@
 		F45AB5DE23BD69C800B09E04 /* PlaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5DD23BD69C700B09E04 /* PlaneTests.swift */; };
 		F45AB5E023BD7B5B00B09E04 /* Easel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5DF23BD7B5B00B09E04 /* Easel.swift */; };
 		F45AB5E223BD7BD400B09E04 /* WorkBench.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5E123BD7BD400B09E04 /* WorkBench.swift */; };
+		F45AB5E423BEC7E200B09E04 /* writeSTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5E323BEC7E200B09E04 /* writeSTL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +136,7 @@
 		F45AB5DD23BD69C700B09E04 /* PlaneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaneTests.swift; sourceTree = "<group>"; };
 		F45AB5DF23BD7B5B00B09E04 /* Easel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easel.swift; sourceTree = "<group>"; };
 		F45AB5E123BD7BD400B09E04 /* WorkBench.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBench.swift; sourceTree = "<group>"; };
+		F45AB5E323BEC7E200B09E04 /* writeSTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = writeSTL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,16 +178,17 @@
 		F45AB55D23BD3B5600B09E04 /* MeshTools */ = {
 			isa = PBXGroup;
 			children = (
+				F45AB5E323BEC7E200B09E04 /* writeSTL.swift */,
 				F45AB5E123BD7BD400B09E04 /* WorkBench.swift */,
 				F45AB5DF23BD7B5B00B09E04 /* Easel.swift */,
-				F45AB5CD23BD50C100B09E04 /* Plane.swift */,
-				F45AB5BE23BD4FEA00B09E04 /* Line.swift */,
 				F45AB5B523BD4E1300B09E04 /* Mesh.swift */,
-				F45AB5AC23BD480800B09E04 /* PenTypes.swift */,
+				F45AB5BE23BD4FEA00B09E04 /* Line.swift */,
 				F45AB5A923BD47FC00B09E04 /* LineSeg.swift */,
-				F45AB5A323BD46D000B09E04 /* OrthoVol.swift */,
 				F45AB59223BD412A00B09E04 /* CoordinateSystem.swift */,
+				F45AB5CD23BD50C100B09E04 /* Plane.swift */,
 				F45AB58F23BD411E00B09E04 /* Point3D.swift */,
+				F45AB5A323BD46D000B09E04 /* OrthoVol.swift */,
+				F45AB5AC23BD480800B09E04 /* PenTypes.swift */,
 				F45AB58923BD410F00B09E04 /* Transform.swift */,
 				F45AB58A23BD410F00B09E04 /* Vector3D.swift */,
 				F45AB5C723BD50A900B09E04 /* ArcPointsError.swift */,
@@ -340,6 +343,7 @@
 				F45AB59F23BD41D800B09E04 /* ZeroVectorError.swift in Sources */,
 				F45AB59623BD41BC00B09E04 /* IdenticalVectorError.swift in Sources */,
 				F45AB5C223BD4FF600B09E04 /* NonCoPlanarLinesError.swift in Sources */,
+				F45AB5E423BEC7E200B09E04 /* writeSTL.swift in Sources */,
 				F45AB56323BD3B5600B09E04 /* ViewController.swift in Sources */,
 				F45AB58B23BD410F00B09E04 /* Transform.swift in Sources */,
 				F45AB5B623BD4E1300B09E04 /* Mesh.swift in Sources */,

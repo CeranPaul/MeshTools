@@ -1,12 +1,12 @@
 //
 //  Mesh.swift
-//  HashBench
+//  MeshTools
 //
 //  Created by Paul Hollingshead on 6/30/19.
 //  Copyright © 2019 Paul Hollingshead. All rights reserved.
 //
 
-import SceneKit
+import UIKit
 
 /// Main class for Set operations
 public class Mesh   {
@@ -21,9 +21,9 @@ public class Mesh   {
     var matedSet = Set<CommonEdge>()
     
     /// Definition of "equal" for point coordinates for this mesh.  Used to hash in "Edge".
-    /// Should vary with measurement system used, and with model dimensions
+    /// Should vary with measurement system used, and with model dimensions.
     /// Could become a variable set with the constructor.
-    /// Distinct from "allowableCrown", and Point3D.Epsilon
+    /// Distinct from "allowableCrown", and Point3D.Epsilon.
     public static let Epsilon = 0.010   // Appropriate for millimeters
     
     
