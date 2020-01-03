@@ -260,7 +260,6 @@ open class Transform   {
     
     
     /// Generate a Transform to rotate and translate from a local CSYS TO the global coordinate system.
-    /// Should this become a method of Transform?
     /// - See: 'testGenToGlobal' under CoordinateSystemTests for a partial set of tests
     public static func genToGlobal(csys: CoordinateSystem) -> Transform   {
         
@@ -273,7 +272,6 @@ open class Transform   {
     }
     
     /// Generate a Transform to get points FROM the global CSYS.
-    /// Should this become a method of Transform?
     public static func genFromGlobal(csys: CoordinateSystem) -> Transform   {
         
         // Construct the transpose of the 3 x 3
