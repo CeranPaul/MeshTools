@@ -166,6 +166,105 @@ open class Ellipse {
     }
     
     
+    
+    /// Finds the new parameter that meets the crown requirement.
+    /// - Parameters:
+    ///   - allowableCrown:  Acceptable deviation from curve
+    ///   - currentT:  Present value of the driving parameter
+    ///   - increasing:  Whether the change in parameter should be up or down
+    /// - Returns: New value for driving parameter
+    public func findStep(allowableCrown: Double, currentT: Double, increasing: Bool) -> Double   {
+        
+        /// How quickly to refine the parameter guess
+        let factor = 1.25
+        
+        /// Change in parameter - constantly refined.
+        var step = 0.9999 - currentT
+        
+        if !increasing   {
+            step = -0.9999 * currentT
+        }
+        
+        /// Working value of the parameter
+        var trialT: Double
+        
+        /// Calculated crown
+        var deviation: Double
+        
+        /// Counter to prevent loop runaway
+        var safety = 0
+        
+        repeat   {
+            
+            if increasing   {
+                trialT = currentT + step
+                if currentT > (1.0 - step)   {   // Prevent parameter value > 1.0
+                    trialT = 1.0
+                }
+            }  else {
+                trialT = currentT - step
+                if currentT < step   {   // Prevent parameter value < 0.0
+                    trialT = 0.0
+                }
+            }
+            
+            deviation = self.findCrown(smallerT: currentT, largerT: trialT)   // Why originally reversed?
+
+            step = step / factor     // Prepare for the next iteration
+            safety += 1
+            
+        }  while deviation > allowableCrown  && safety < 12    // Fails ugly!
+        
+        return trialT
+    }
+    
+    
+    /// Calculate the crown over a small segment
+    /// - Parameters:
+    ///   - smallerT:  One location on the curve
+    ///   - largerT:  One location on the curve
+    /// - Returns: Maximum separation.
+    public func findCrown(smallerT: Double, largerT: Double) -> Double   {
+        
+        let delta = (largerT - smallerT) / 16.0
+        
+        var crownDots = [Point3D]()
+        
+        let anchorA = try! self.pointAt(t: smallerT)
+        crownDots.append(anchorA)
+        
+        for g in 1...15   {
+            
+            let pip = try! self.pointAt(t: smallerT + Double(g) * delta)
+            crownDots.append(pip)
+        }
+        
+        let anchorB = try! self.pointAt(t: largerT)
+        crownDots.append(anchorB)
+        
+        let deviation = self.crownCalcs(dots: crownDots)
+        return deviation
+    }
+    
+    
+    /// Caluclate deviation from a LineSeg
+    /// - Parameters:
+    ///   - dots:  Array of Point3D.  Order is assumed.
+    /// - Returns: Maximum separation.
+    /// Does not check for an Array length < 3.
+    /// Is a duplicate to the version in Cubic
+    public func crownCalcs(dots: [Point3D]) -> Double   {
+        
+        let bar = try! LineSeg(end1: dots.first!, end2: dots.last!)
+        
+        let seps = dots.map( { bar.resolveRelativeVec(speck: $0).perp.length() } )
+        let curCrown = seps.max()!
+        
+        return curCrown
+    }
+    
+    
+
     /// Move, rotate, and scale by a matrix
     /// This probably doesn't work!
     /// - Throws: CoincidentPointsError if it was scaled to be very small

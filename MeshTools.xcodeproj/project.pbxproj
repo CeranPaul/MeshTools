@@ -79,6 +79,14 @@
 		F45AB5E623BEF98A00B09E04 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5E523BEF98A00B09E04 /* Ellipse.swift */; };
 		F45AB5E723BEF98A00B09E04 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5E523BEF98A00B09E04 /* Ellipse.swift */; };
 		F45AB5E923BEF9AB00B09E04 /* EllipseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5E823BEF9AB00B09E04 /* EllipseTests.swift */; };
+		F45AB5EB23BFC86300B09E04 /* RingCountError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5EA23BFC86300B09E04 /* RingCountError.swift */; };
+		F45AB5EC23BFC86300B09E04 /* RingCountError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5EA23BFC86300B09E04 /* RingCountError.swift */; };
+		F45AB5EE23BFEAE000B09E04 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5ED23BFEAE000B09E04 /* Arc.swift */; };
+		F45AB5EF23BFEAE000B09E04 /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5ED23BFEAE000B09E04 /* Arc.swift */; };
+		F45AB5F123BFEAEE00B09E04 /* ZeroSweepError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5F023BFEAEE00B09E04 /* ZeroSweepError.swift */; };
+		F45AB5F223BFEAEE00B09E04 /* ZeroSweepError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5F023BFEAEE00B09E04 /* ZeroSweepError.swift */; };
+		F45AB5F423BFEB5900B09E04 /* NonOrthogonalPointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5F323BFEB5900B09E04 /* NonOrthogonalPointError.swift */; };
+		F45AB5F523BFEB5900B09E04 /* NonOrthogonalPointError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45AB5F323BFEB5900B09E04 /* NonOrthogonalPointError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +150,10 @@
 		F45AB5E323BEC7E200B09E04 /* writeSTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = writeSTL.swift; sourceTree = "<group>"; };
 		F45AB5E523BEF98A00B09E04 /* Ellipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ellipse.swift; sourceTree = "<group>"; };
 		F45AB5E823BEF9AB00B09E04 /* EllipseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipseTests.swift; sourceTree = "<group>"; };
+		F45AB5EA23BFC86300B09E04 /* RingCountError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingCountError.swift; sourceTree = "<group>"; };
+		F45AB5ED23BFEAE000B09E04 /* Arc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arc.swift; sourceTree = "<group>"; };
+		F45AB5F023BFEAEE00B09E04 /* ZeroSweepError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroSweepError.swift; sourceTree = "<group>"; };
+		F45AB5F323BFEB5900B09E04 /* NonOrthogonalPointError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonOrthogonalPointError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +198,7 @@
 				F45AB5E123BD7BD400B09E04 /* WorkBench.swift */,
 				F45AB5DF23BD7B5B00B09E04 /* Easel.swift */,
 				F45AB5B523BD4E1300B09E04 /* Mesh.swift */,
+				F45AB5ED23BFEAE000B09E04 /* Arc.swift */,
 				F45AB5E523BEF98A00B09E04 /* Ellipse.swift */,
 				F45AB5BE23BD4FEA00B09E04 /* Line.swift */,
 				F45AB5A923BD47FC00B09E04 /* LineSeg.swift */,
@@ -206,11 +219,14 @@
 				F45AB5D623BD607C00B09E04 /* LadderCountError.swift */,
 				F45AB5C123BD4FF600B09E04 /* NonCoPlanarLinesError.swift */,
 				F45AB59823BD41CC00B09E04 /* NonOrthogonalCSYSError.swift */,
+				F45AB5F323BFEB5900B09E04 /* NonOrthogonalPointError.swift */,
 				F45AB59923BD41CC00B09E04 /* NonUnitDirectionError.swift */,
 				F45AB5D323BD5DB600B09E04 /* ParallelError.swift */,
 				F45AB5C423BD500100B09E04 /* ParallelLinesError.swift */,
 				F45AB5CA23BD50B600B09E04 /* ParallelPlanesError.swift */,
+				F45AB5EA23BFC86300B09E04 /* RingCountError.swift */,
 				F45AB5B223BD4E0200B09E04 /* TriangleError.swift */,
+				F45AB5F023BFEAEE00B09E04 /* ZeroSweepError.swift */,
 				F45AB59E23BD41D800B09E04 /* ZeroVectorError.swift */,
 				F45AB55E23BD3B5600B09E04 /* AppDelegate.swift */,
 				F45AB56023BD3B5600B09E04 /* SceneDelegate.swift */,
@@ -345,6 +361,7 @@
 			files = (
 				F45AB5CB23BD50B600B09E04 /* ParallelPlanesError.swift in Sources */,
 				F45AB56923BD3B5600B09E04 /* MeshTools.xcdatamodeld in Sources */,
+				F45AB5EE23BFEAE000B09E04 /* Arc.swift in Sources */,
 				F45AB5AD23BD480800B09E04 /* PenTypes.swift in Sources */,
 				F45AB5C523BD500100B09E04 /* ParallelLinesError.swift in Sources */,
 				F45AB59F23BD41D800B09E04 /* ZeroVectorError.swift in Sources */,
@@ -359,10 +376,13 @@
 				F45AB55F23BD3B5600B09E04 /* AppDelegate.swift in Sources */,
 				F45AB5B923BD4E3E00B09E04 /* EdgeOverflowError.swift in Sources */,
 				F45AB5D723BD607C00B09E04 /* LadderCountError.swift in Sources */,
+				F45AB5F123BFEAEE00B09E04 /* ZeroSweepError.swift in Sources */,
 				F45AB5D423BD5DB600B09E04 /* ParallelError.swift in Sources */,
 				F45AB5E223BD7BD400B09E04 /* WorkBench.swift in Sources */,
+				F45AB5EB23BFC86300B09E04 /* RingCountError.swift in Sources */,
 				F45AB5A623BD473300B09E04 /* CoincidentPointsError.swift in Sources */,
 				F45AB5B323BD4E0200B09E04 /* TriangleError.swift in Sources */,
+				F45AB5F423BFEB5900B09E04 /* NonOrthogonalPointError.swift in Sources */,
 				F45AB5BF23BD4FEA00B09E04 /* Line.swift in Sources */,
 				F45AB5CE23BD50C100B09E04 /* Plane.swift in Sources */,
 				F45AB56123BD3B5600B09E04 /* SceneDelegate.swift in Sources */,
@@ -407,15 +427,19 @@
 				F45AB5DE23BD69C800B09E04 /* PlaneTests.swift in Sources */,
 				F45AB5D523BD5DB600B09E04 /* ParallelError.swift in Sources */,
 				F45AB5E723BEF98A00B09E04 /* Ellipse.swift in Sources */,
+				F45AB5EF23BFEAE000B09E04 /* Arc.swift in Sources */,
 				F45AB59B23BD41CC00B09E04 /* NonOrthogonalCSYSError.swift in Sources */,
 				F45AB5DA23BD64B400B09E04 /* CoordinateSystemTests.swift in Sources */,
 				F45AB5BA23BD4E3E00B09E04 /* EdgeOverflowError.swift in Sources */,
+				F45AB5EC23BFC86300B09E04 /* RingCountError.swift in Sources */,
+				F45AB5F223BFEAEE00B09E04 /* ZeroSweepError.swift in Sources */,
 				F45AB5CC23BD50B600B09E04 /* ParallelPlanesError.swift in Sources */,
 				F45AB5B723BD4E1300B09E04 /* Mesh.swift in Sources */,
 				F45AB59423BD412A00B09E04 /* CoordinateSystem.swift in Sources */,
 				F45AB59D23BD41CC00B09E04 /* NonUnitDirectionError.swift in Sources */,
 				F45AB5DC23BD64C000B09E04 /* LineTests.swift in Sources */,
 				F45AB59123BD411E00B09E04 /* Point3D.swift in Sources */,
+				F45AB5F523BFEB5900B09E04 /* NonOrthogonalPointError.swift in Sources */,
 				F45AB5C023BD4FEA00B09E04 /* Line.swift in Sources */,
 				F45AB5A223BD46C100B09E04 /* OrthoVolTests.swift in Sources */,
 				F45AB5AB23BD47FC00B09E04 /* LineSeg.swift in Sources */,

@@ -164,53 +164,62 @@ public class Mesh   {
     
     /// Make triangles between two full Arcs.
     /// Perhaps start with the radii so that check cylinders can be used.
+    /// An assumed convention is that the Arrays will start on the X-axis and proceed CCW.
     /// - Parameters:
     ///   - inner: Points on a ring.  Smaller count
     ///   - outer: Points on a ring.  Larger count
-    /// - Throws: ArcPointsError, RingCountError
+    /// - Throws: ArcPointsError, RingCountError, LadderCountError, CoincidentPointsError, TrianglePointError, EdgeOverflowError
     /// - Returns: Small mesh
     public static func fillRingStep(inner: [Point3D], outer: [Point3D]) throws -> Mesh   {
         
-        guard inner.count > 2 else {throw ArcPointsError(badPtA: inner[0], badPtB: inner[1], badPtC: inner[0])}
+        guard inner.count > 2 else {throw RingCountError(tally: inner.count)}
         
-        guard outer.count > 2 else {throw ArcPointsError(badPtA: outer[0], badPtB: outer[1], badPtC: outer[0])}
+        guard outer.count > 2 else {throw RingCountError(tally: outer.count)}
+        
         
         let diff = outer.count - inner.count
         
+        // Not the correct error.
         guard diff >= 0 else {throw ArcPointsError(badPtA: inner[0], badPtB: inner[1], badPtC: inner[2])}
         
-        // How do I check that the rings increase in the same direction?
+        // How do I check that the ring points are ordered in the same direction?
+        // And are aligned, for that matter.
+        // Would be good to get away from forcing order of the inputs.
+        
         
         /// The ring of triangles to be returned
         let hula = Mesh()
         
-        /// Index in the outer array of points
-        var outerG = 0
-        
-        /// Stopping point for a section in the outer chain
-        var endIndex: Int
+        /// Index in the outer array of points.  Starts at the beginning of the Array.
+        var outerStartIndex = 0
         
         for g in 1..<inner.count   {
             
+            /// Next pair from the inner chain
+            let innerPair = [inner[g - 1], inner[g]]
+            
+            
+            /// Moving index for a series in the outer chain
+            var outerStopIndex: Int
+            
             if g == inner.count - 1   {    // Align indices for final verts
-                endIndex = outer.count - 1
+                outerStopIndex = outer.count - 1
             }  else  {   // Find the proportional index in the outer chain
                 let endFloat = Double(g) / Double(inner.count) * Double(outer.count)
-                endIndex = Int(round(endFloat))
+                outerStopIndex = Int(round(endFloat))
             }
             
-            /// Next pair from the inner chain
-            let duo = [inner[g - 1], inner[g]]
-            
             /// Array slice from the outer chain
-            let portion = outer[outerG...endIndex]
-            let oppo = [Point3D](portion)   // Coerce into a Point3D array
+            let portion = outer[outerStartIndex...outerStopIndex]
             
-            /// Vertices that are neighbors
-            let card = try Mesh.duoLadder(duo: duo, oppo: oppo)
-            try hula.absorb(noob: card)
+            /// A few points from the outer array
+            let outerSeries = [Point3D](portion)   // Coerce into a Point3D array
             
-            outerG = endIndex
+            /// Triangles for one segment of a hoop.
+            let wedge = try Mesh.duoLadder(duo: innerPair, oppo: outerSeries)
+            try hula.absorb(noob: wedge)
+            
+            outerStartIndex = outerStopIndex   // Prep for the next segment
         }
         
         return hula
@@ -222,16 +231,18 @@ public class Mesh   {
     /// - Parameters:
     ///   - duo:  Pair of points for one side
     ///   - oppo: Points on opposite side
-    /// - Throws: LadderCountError if oppo contains more than six points
+    /// - Throws: LadderCountError if oppo contains more than six points, CoincidentPointsError, TrianglePointError, EdgeOverflowError
     public static func duoLadder(duo: [Point3D], oppo: [Point3D]) throws -> Mesh   {
         
-        guard oppo.count < 7  else  { throw LadderCountError(tallyL: duo.count, tallyR: oppo.count) }   // Needs a better error
+        guard oppo.count < 7  else  { throw LadderCountError(tallyL: duo.count, tallyR: oppo.count) }
+        
         
         // Should I test that the inputs contain no duplicates?
         
         
         /// The return value
         var patch: Mesh
+        
         
         switch oppo.count   {
             
@@ -245,8 +256,6 @@ public class Mesh   {
             try patch.addPoints(ptA: oppo[1], ptB: oppo[2], ptC: duo[1])
             
         case 4, 5, 6:
-            
-            //            print("Large case")
             
             let leap = Mesh.findBigGap(chain: oppo)
             patch = try Mesh.meshFromFour(ptA: duo[0], ptB: oppo[leap], ptC: oppo[leap + 1], ptD: duo[1])
@@ -268,7 +277,6 @@ public class Mesh   {
             
         }
         
-        //        print(patch.scales.count)
         
         return patch
     }
@@ -335,6 +343,7 @@ public class Mesh   {
         
         return resultMesh
     }
+    
     
     /// Fill a strip with triangles.  Port and starboard are important to get triangle normals in the proper direction.
     /// The chain counts may be different by one, in which case a wedge will be added at the finish.
